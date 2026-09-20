@@ -33,6 +33,17 @@ npm run preview # serve the production build locally
 
 The build outputs a fully static `dist/` folder. Deploy it to any static host.
 
+### GitHub Pages (current deployment — live)
+
+This repo already deploys automatically to GitHub Pages via a GitHub Action
+(`.github/workflows/deploy.yml`). The `base` path in `vite.config.ts` is set to
+`/portfolio/` (project-site subpath), which is why every asset URL is prefixed.
+
+- Live URL: `https://iamdineshreddy.github.io/portfolio/`
+- Push to `main` → workflow builds `dist/` and deploys.
+- To change the deploy target, edit `base` in `vite.config.ts` (e.g. `/` for a
+  user site at `https://iamdineshreddy.github.io/`).
+
 ### Netlify
 
 1. Push this repo to GitHub/GitLab.
