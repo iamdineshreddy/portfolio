@@ -4,7 +4,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/portfolio/",
+  // Render serves the app from the domain root, not /portfolio/.
+  base: "/",
   build: {
     sourcemap: false,
     chunkSizeWarningLimit: 800,
