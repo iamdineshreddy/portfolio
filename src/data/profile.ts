@@ -26,7 +26,7 @@ export const heroPrimary = {
 };
 
 export const imageConfig = {
-  slot: "/profile/dinesh-profile.jpg",
+  slot: "https://avatars.githubusercontent.com/u/159031236?v=4",
   alt: "Maddula Dinesh Reddy",
   enabled: true,
 };
