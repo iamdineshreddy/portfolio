@@ -26,7 +26,7 @@ export const heroPrimary = {
 };
 
 export const imageConfig = {
-  slot: "data:image/jpeg;base64,${imageBase64}",
+  slot: "/profile/dinesh-profile.jpg",
   alt: "Maddula Dinesh Reddy",
   enabled: true,
 };
