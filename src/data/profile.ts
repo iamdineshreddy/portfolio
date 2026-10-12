@@ -12,6 +12,7 @@ export const profile = {
   phone: "+91 7893380832",
   github: "https://github.com/iamdineshreddy",
   linkedin: "https://www.linkedin.com/in/maddula-dinesh-reddy/",
+  portfolio: "https://dinesh-portfolio-yt4g.onrender.com/",
   resumePath: "resume/Maddula_Dinesh_Reddy_Resume.pdf",
   location: "Hyderabad, India",
 };
