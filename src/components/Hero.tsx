@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "motion/react";
-import { ArrowRight, BadgeCheck, Download, Mail } from "lucide-react";
+import { ArrowRight, BadgeCheck, Download, Mail, Globe } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
 import { imageConfig, profile, resumeHref } from "../data/profile";
 import { ProfileImage } from "./ProfileImage";
@@ -228,6 +228,15 @@ export function Hero() {
               className="flex h-11 w-11 items-center justify-center rounded-xl border hairline bg-ink-900 text-muted-400 transition-all hover:border-accent-400/40 hover:text-accent-300"
             >
               <LinkedinIcon className="h-5 w-5" />
+            </a>
+            <a
+              href={profile.portfolio}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Live portfolio website"
+              className="flex h-11 w-11 items-center justify-center rounded-xl border hairline bg-ink-900 text-muted-400 transition-all hover:border-accent-400/40 hover:text-accent-300"
+            >
+              <Globe className="h-5 w-5" />
             </a>
             <a
               href={`mailto:${profile.email}`}
