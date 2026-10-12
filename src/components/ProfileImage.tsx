@@ -6,8 +6,8 @@ export function ProfileImage({ className = "" }: { className?: string }) {
       <img
         src={imageConfig.slot}
         alt={imageConfig.alt}
-        loading="lazy"
-        className={`aspect-square w-full rounded-2xl border hairline bg-ink-900 object-cover ${className}`}
+        loading="eager"
+        className={`aspect-square w-full rounded-full border hairline bg-ink-900 object-cover shadow-xl ${className}`}
       />
     );
   }
