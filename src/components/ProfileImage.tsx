@@ -1,12 +1,24 @@
+import { useState } from "react";
 import { imageConfig, profile } from "../data/profile";
 
+const fallbackImage = "/profile/dinesh-profile.jpg";
+
 export function ProfileImage({ className = "" }: { className?: string }) {
+  const [imageSrc, setImageSrc] = useState(imageConfig.slot);
+  const [hasTriedFallback, setHasTriedFallback] = useState(false);
+
   if (imageConfig.enabled) {
     return (
       <img
-        src={imageConfig.slot}
+        src={imageSrc}
         alt={imageConfig.alt}
         loading="eager"
+        onError={() => {
+          if (!hasTriedFallback && imageSrc !== fallbackImage) {
+            setHasTriedFallback(true);
+            setImageSrc(fallbackImage);
+          }
+        }}
         className={`aspect-square w-full rounded-full border hairline bg-ink-900 object-cover shadow-xl ${className}`}
       />
     );
