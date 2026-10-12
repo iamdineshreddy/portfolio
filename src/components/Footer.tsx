@@ -1,4 +1,5 @@
 import { GithubIcon, LinkedinIcon } from "./icons";
+import { Globe } from "lucide-react";
 import { profile } from "../data/profile";
 import { scrollToId } from "../lib/scroll";
 
@@ -56,6 +57,15 @@ export function Footer() {
               className="flex h-10 w-10 items-center justify-center rounded-xl border hairline bg-ink-900 text-muted-400 transition-colors hover:text-accent-300"
             >
               <LinkedinIcon className="h-4 w-4" />
+            </a>
+            <a
+              href={profile.portfolio}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Live portfolio website"
+              className="flex h-10 w-10 items-center justify-center rounded-xl border hairline bg-ink-900 text-muted-400 transition-colors hover:text-accent-300"
+            >
+              <Globe className="h-4 w-4" />
             </a>
           </div>
         </div>
