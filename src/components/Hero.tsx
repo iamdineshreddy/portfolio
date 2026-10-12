@@ -248,7 +248,7 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <div className="hidden w-full max-w-sm shrink-0 flex-col gap-4 sm:flex lg:w-80">
+        <div className="flex w-full max-w-sm shrink-0 flex-col gap-4 lg:w-80">
           {imageConfig.enabled && <ProfileImage />}
           <div className="glow-card rounded-2xl border hairline bg-ink-900/70 p-5 backdrop-blur">
             <p className="font-mono text-xs uppercase tracking-widest text-muted-500">
